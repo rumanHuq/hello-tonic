@@ -1,0 +1,15 @@
+syntax = "proto3";
+package person;
+
+// For Person
+enum MarriageStatus {
+  UNSPECIFIED = 0;
+  SINGLE = 1;
+  MARRIED = 2;
+}
+
+message Person {
+  string name = 1;
+  repeated string occupations = 2;
+  MarriageStatus marriagestatus = 3;
+}
